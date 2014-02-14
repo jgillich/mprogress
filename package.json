@@ -1,0 +1,19 @@
+{
+  "name": "mprogress",
+  "version": "0.1.0",
+  "description": "Slim progress bar",
+  "main": "mprogress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgillich/mprogress.git"
+  },
+  "author": "Jakob Gillich <jakob@gillich.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgillich/mprogress/issues"
+  },
+  "homepage": "https://github.com/jgillich/mprogress"
+}

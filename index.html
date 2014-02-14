@@ -15,15 +15,15 @@
     <![endif]-->
   </head>
   <body>
-  
-	<script src="javascripts/mprogress.js"></script>
-  	<script>
-		var mprogress = new MProgress({ background: '#F8F8F2' });
 
-		mprogress.interval().show();
+    <script src="javascripts/mprogress.js"></script>
+      <script>
+        var mprogress = new MProgress({ background: '#F8F8F2' });
 
-		setTimeout(mprogress.hide.bind(mprogress), 5000);
-	</script>
+        mprogress.interval().show();
+
+        setTimeout(mprogress.hide.bind(mprogress), 5000);
+    </script>
     <div class="wrapper">
       <header class="without-description">
         <h1>MProgress</h1>
@@ -60,7 +60,7 @@ mprogress.hide();
 <a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
 
 <ul>
-<li><p><code>Mprogress([styles])</code>: Constructor function. Styles is a object containing <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style">HTMLElement.style</a> properties, used to override the default style. Returns <code>this</code>.</p></li>
+<li><p><code>MProgress([styles])</code>: Constructor function. Styles is a object containing <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style">HTMLElement.style</a> properties, used to override the default style. Returns <code>this</code>.</p></li>
 <li><p><code>interval([interval])</code>: Creates a timer that calls <code>increase()</code> with a default <code>interval</code> of 500ms. Automatically removed in <code>remove()</code>. Returns <code>this</code>.</p></li>
 <li><p><code>show()</code>: Append element to body. Returns <code>this</code>.</p></li>
 <li><p><code>hide()</code>: Finish progress bar and call <code>remove()</code>. Returns <code>this</code>.</p></li>
@@ -76,6 +76,6 @@ mprogress.hide();
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
   </body>
 </html>

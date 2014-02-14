@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
+  
+	<script src="javascripts/mprogress.js"></script>
+  	<script>
+		var mprogress = new MProgress({ background: '#F8F8F2' });
+
+		mprogress.interval().show();
+
+		setTimeout(mprogress.hide.bind(mprogress), 5000);
+	</script>
     <div class="wrapper">
       <header class="without-description">
         <h1>MProgress</h1>
@@ -45,7 +54,6 @@ mprogress.interval().show();
 // do stuff
 
 mprogress.hide();
-
 </code></pre>
 
 <h2>

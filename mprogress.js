@@ -35,6 +35,7 @@ MProgress.prototype.interval = function (interval) {
 
 MProgress.prototype.show = function () {
     document.getElementsByTagName('body')[0].appendChild(this.el);
+    return this;
 };
 
 MProgress.prototype.hide = function () {

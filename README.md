@@ -1,4 +1,4 @@
-# mprogress
+# MProgress
 
 A slim progress bar with no dependencies. Similar to [nprogress](https://github.com/rstacruz/nprogress).
 
@@ -18,12 +18,11 @@ mprogress.interval().show();
 // do stuff
 
 mprogress.hide();
-
 ```
 
 ## Functions
 
-* `Mprogress([styles])`: Constructor function. Styles is a object containing [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style) properties, used to override the default style. Returns `this`.
+* `MProgress([styles])`: Constructor function. Styles is a object containing [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style) properties, used to override the default style. Returns `this`.
 
 * `interval([interval])`: Creates a timer that calls `increase()` with a default `interval` of 500ms. Automatically removed in `remove()`. Returns `this`.
 

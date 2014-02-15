@@ -58,7 +58,7 @@ MProgress.prototype.set = function (val) {
 };
 
 MProgress.prototype.get = function () {
-    return parseFloat(this.el.style.width.split('%')[0], 10);
+    return parseFloat(this.el.style.width.split('%')[0]);
 };
 
 MProgress.prototype.increase = function (val) {

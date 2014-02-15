@@ -15,6 +15,13 @@
     <![endif]-->
   </head>
   <body>
+    <script src="https://raw.github.com/jgillich/mprogress/master/mprogress.js"></script>
+    <script>
+      var mprogress = new MProgress();
+      mprogress.interval().show();
+      
+      setTimeout(mprogress.hide.bind(mprogress), 15000);
+    </script>
     <div class="wrapper">
       <header class="without-description">
         <h1>MProgress</h1>

@@ -8,22 +8,13 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-
-    <script src="javascripts/mprogress.js"></script>
-      <script>
-        var mprogress = new MProgress({ background: '#F8F8F2' });
-
-        mprogress.interval().show();
-
-        setTimeout(mprogress.hide.bind(mprogress), 5000);
-    </script>
     <div class="wrapper">
       <header class="without-description">
         <h1>MProgress</h1>
@@ -37,7 +28,7 @@
       </header>
       <section>
         <h1>
-<a name="mprogress" class="anchor" href="#mprogress"><span class="octicon octicon-link"></span></a>mprogress</h1>
+<a name="mprogress" class="anchor" href="#mprogress"><span class="octicon octicon-link"></span></a>MProgress</h1>
 
 <p>A slim progress bar with no dependencies. Similar to <a href="https://github.com/rstacruz/nprogress">nprogress</a>.</p>
 
@@ -60,15 +51,23 @@ mprogress.hide();
 <a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
 
 <ul>
-<li><p><code>MProgress([styles])</code>: Constructor function. Styles is a object containing <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style">HTMLElement.style</a> properties, used to override the default style. Returns <code>this</code>.</p></li>
-<li><p><code>interval([interval])</code>: Creates a timer that calls <code>increase()</code> with a default <code>interval</code> of 500ms. Automatically removed in <code>remove()</code>. Returns <code>this</code>.</p></li>
-<li><p><code>show()</code>: Append element to body. Returns <code>this</code>.</p></li>
-<li><p><code>hide()</code>: Finish progress bar and call <code>remove()</code>. Returns <code>this</code>.</p></li>
-<li><p><code>remove()</code>: Remove element from body and detach timers. Returns <code>this</code>.</p></li>
-<li><p><code>set(value)</code>: Set current progress to percentage <code>value</code>. Returns <code>this</code>.</p></li>
-<li><p><code>get()</code>: Returns current percentage value.</p></li>
-<li><p><code>increase([value])</code>: Increase progress bar value. If <code>value</code> is not passed, a random value is chosen. Returns <code>this</code>.</p></li>
-</ul>
+<li>
+<code>MProgress([styles])</code>: Constructor function. <code>styles</code> is a object containing <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style">HTMLElement.style</a> properties, used to override the default style.</li>
+<li>
+<code>interval([interval])</code>: Create a timer that calls <code>increase()</code> with a default <code>interval</code> of 500ms. Automatically removed in <code>remove()</code>.</li>
+<li>
+<code>show()</code>: Append element to body.</li>
+<li>
+<code>hide()</code>: Finish progress bar and call <code>remove()</code>.</li>
+<li>
+<code>remove()</code>: Remove element from body and detach timers.</li>
+<li>
+<code>set(value)</code>: Set current progress to percentage <code>value</code>.</li>
+<li>
+<code>get()</code>: Return current percentage value.</li>
+<li>
+<code>increase([value])</code>: Increase progress bar value. If <code>value</code> is not passed, a random value is chosen.</li>
+</ul><p>All functions that don't return a value are chainable.</p>
       </section>
     </div>
     <footer>
@@ -76,6 +75,6 @@ mprogress.hide();
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
+    
   </body>
 </html>

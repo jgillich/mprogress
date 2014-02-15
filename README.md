@@ -19,21 +19,15 @@ mprogress.interval().show();
 
 mprogress.hide();
 ```
-
 ## Functions
 
-* `MProgress([styles])`: Constructor function. Styles is a object containing [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style) properties, used to override the default style. Returns `this`.
+* `MProgress([styles])`: Constructor function. `styles` is a object containing [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.style) properties, used to override the default style.
+* `interval([interval])`: Create a timer that calls `increase()` with a default `interval` of 500ms. Automatically removed in `remove()`.
+* `show()`: Append element to body.
+* `hide()`: Finish progress bar and call `remove()`.
+* `remove()`: Remove element from body and detach timers.
+* `set(value)`: Set current progress to percentage `value`.
+* `get()`: Return current percentage value.
+* `increase([value])`: Increase progress bar value. If `value` is not passed, a random value is chosen.
 
-* `interval([interval])`: Creates a timer that calls `increase()` with a default `interval` of 500ms. Automatically removed in `remove()`. Returns `this`.
-
-* `show()`: Append element to body. Returns `this`.
-
-* `hide()`: Finish progress bar and call `remove()`. Returns `this`.
-
-* `remove()`: Remove element from body and detach timers. Returns `this`.
-
-* `set(value)`: Set current progress to percentage `value`. Returns `this`.
-
-* `get()`: Returns current percentage value.
-
-* `increase([value])`: Increase progress bar value. If `value` is not passed, a random value is chosen. Returns `this`.
+All functions that don't return a value are chainable.

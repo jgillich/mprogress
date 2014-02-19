@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<head>
-    <title>mprogress</title>
-</head>
-<body>
-    <script src="mprogress.js"></script>
-    <script>
-        var mprogress = new MProgress().interval().show();
-
-        window.mprogress = mprogress;
-    </script>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MProgress Tests</title>
+        <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/chai/chai.js"></script>
+        <script>window.assert = chai.assert</script>
+        <script src="node_modules/mocha/mocha.js"></script>
+        <script>mocha.setup('bdd')</script>
+        <script src="mprogress.js"></script>
+        <script src="tests/basic.js"></script>
+        <script>
+            mocha.checkLeaks();
+            mocha.globals(['jQuery']);
+            mocha.run();
+        </script>
+    </body>
+</html>

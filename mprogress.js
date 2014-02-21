@@ -66,9 +66,9 @@
 
     MProgress.prototype.increase = function (val) {
         if(!val) {
-            val = random(0, (100 - this.get()) / 25);
+            val = Math.min(random(0, (100 - this.get()) / 25), 99.99);
         }
-        this.set(Math.min(this.get() + val, 99.9));
+        this.set(this.get() + val);
         return this;
     };
 

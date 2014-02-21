@@ -13,7 +13,9 @@
         <script src="node_modules/mocha/mocha.js"></script>
         <script>mocha.setup('bdd')</script>
         <script src="mprogress.js"></script>
-        <script src="tests/basic.js"></script>
+        <script src="test/mprogress.js"></script>
+        <script src="node_modules/requirejs/require.js"></script>
+        <script src="test/requirejs.js"></script>
         <script>
             mocha.checkLeaks();
             mocha.globals(['jQuery']);

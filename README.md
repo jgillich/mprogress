@@ -1,4 +1,4 @@
-# MProgress
+# MProgress [![Build Status](https://travis-ci.org/jgillich/mprogress.png?branch=tmp)](https://travis-ci.org/jgillich/mprogress)
 
 A slim progress bar with no dependencies. Similar to [nprogress](https://github.com/rstacruz/nprogress).
 

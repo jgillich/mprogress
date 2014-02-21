@@ -17,9 +17,9 @@
         <script src="node_modules/requirejs/require.js"></script>
         <script src="test/requirejs.js"></script>
         <script>
-            mocha.checkLeaks();
-            mocha.globals(['jQuery']);
-            mocha.run();
+            //mocha.checkLeaks();
+            //mocha.globals(['jQuery']);
+            (window.mochaPhantomJS || mocha).run();
         </script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-(function () {
+(function (root) {
 
     function MProgress(styles) {
         var key;
@@ -77,7 +77,7 @@
     } else if(typeof module !== 'undefined' && module.exports) {
         module.exports = MProgress;
     } else {
-        this.MProgress = MProgress;
+        root.MProgress = MProgress;
     }
 
-}).call(this);
+}(this));

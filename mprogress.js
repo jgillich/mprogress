@@ -12,7 +12,7 @@
             left: '0',
             right: '0',
             zIndex: '100',
-            background: 'red',
+            background: '#F15501',
             transition: 'width 0.5s'
         };
         for (var key in styles) {
@@ -79,6 +79,5 @@
     } else {
         this.MProgress = MProgress;
     }
-
 
 }).call(this);

@@ -1,7 +1,7 @@
-/*jslint browser: true*/
 (function () {
 
     function MProgress(styles) {
+        var key;
         this.el = document.createElement('div');
 
         this.styles = {
@@ -15,10 +15,10 @@
             background: '#F15501',
             transition: 'width 0.5s'
         };
-        for (var key in styles) {
+        for (key in styles) {
             this.styles[key] = styles[key];
         }
-        for(var key in this.styles) {
+        for(key in this.styles) {
             this.el.style[key] = this.styles[key];
         }
 
@@ -27,7 +27,7 @@
 
     function random(min, max) {
         return Math.random() * (max - min) + min;
-    };
+    }
 
     MProgress.prototype.interval = function (interval) {
         this.intervalID = setInterval(function () {

@@ -1,0 +1,8 @@
+{
+    "eqeqeq": true,
+    "indent": 4,
+    "unused": "vars",
+    "undef": false,
+    "trailing": true,
+    "browser": true
+}

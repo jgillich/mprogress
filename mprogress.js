@@ -25,10 +25,6 @@
         return this;
     }
 
-    function random(min, max) {
-        return Math.random() * (max - min) + min;
-    }
-
     MProgress.prototype.interval = function (interval) {
         this.intervalID = setInterval(function () {
             this.increase();
@@ -66,7 +62,7 @@
 
     MProgress.prototype.increase = function (val) {
         if(!val) {
-            val = Math.min(random(0, (100 - this.get()) / 25), 99.99);
+            val = Math.min((100 - this.get()) / (this.get() || 1), 10) * Math.random();
         }
         this.set(this.get() + val);
         return this;

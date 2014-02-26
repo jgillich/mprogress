@@ -29,6 +29,7 @@
         this.intervalID = setInterval(function () {
             this.increase();
         }.bind(this), interval || 500);
+        this.el.style.transition = 'width ' + (interval || 500) / 1000 + 's';
         return this;
     };
 

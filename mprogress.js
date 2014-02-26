@@ -1,10 +1,9 @@
 (function (root) {
 
     function MProgress(styles) {
-        var key;
         this.el = document.createElement('div');
 
-        this.styles = {
+        extend(this.el.style, {
             position: 'fixed',
             width: '0%',
             height: '2px',
@@ -14,15 +13,19 @@
             zIndex: '100',
             background: '#F15501',
             transition: 'width 0.5s'
-        };
-        for (key in styles) {
-            this.styles[key] = styles[key];
-        }
-        for(key in this.styles) {
-            this.el.style[key] = this.styles[key];
-        }
+        }, styles);
 
         return this;
+    }
+
+    function extend(destination) {
+        var objects = Array.prototype.slice.call(arguments, 1);
+        for(var i = 0; i < objects.length; i++) {
+            for(var key in objects[i]) {
+                destination[key] = objects[i][key];
+            }
+        }
+        return destination;
     }
 
     MProgress.prototype.interval = function (interval) {

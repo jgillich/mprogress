@@ -22,4 +22,10 @@ describe('MProgress', function() {
         mprogress.remove();
     });
 
+    it('should accept custom styles', function () {
+        var mprogress = new MProgress({ background: 'rgb(1, 2, 3)' }).show();
+        assert.equal('rgb(1, 2, 3)', $('body div:last-child').css('background-color'));
+        mprogress.remove();
+    });
+
 });

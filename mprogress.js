@@ -29,10 +29,9 @@
     }
 
     MProgress.prototype.interval = function (interval) {
-        this.intervalID = setInterval(function () {
-            this.increase();
-        }.bind(this), interval || 500);
-        this.el.style.transition = 'width ' + (interval || 500) / 1000 + 's';
+        interval = interval || 500;
+        this.intervalID = setInterval(this.increase.bind(this), interval);
+        this.el.style.transition = 'width ' + interval / 1000 + 's';
         return this;
     };
 

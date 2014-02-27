@@ -4,7 +4,7 @@
   "description": "Slim progress bar",
   "main": "mprogress.js",
   "scripts": {
-    "test": "mocha-phantomjs index.html && jshint mprogress.js"
+    "test": "mocha-phantomjs index.html && mocha test/commonjs.js && jshint mprogress.js"
   },
   "repository": {
     "type": "git",

@@ -14,8 +14,6 @@
             background: '#F15501',
             transition: 'width 0.5s'
         }, styles);
-
-        return this;
     }
 
     function extend(destination) {
